@@ -1,0 +1,124 @@
+.main-container {
+  height: 700px;
+  width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main-container h2 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.main-container h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.habits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 28px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.habit-item:hover {
+  transform: scale(1.01);
+  transition: all 0.5s;
+}
+
+.habit-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.habit-info img {
+  width: 40px;
+  height: 40px;
+}
+
+.habit-info h5 {
+  font-size: 18px;
+  color: #1677ff;
+  margin: 0;
+}
+
+.habit-info p {
+  font-size: 14px;
+  color: #1677ff;
+  margin: 0;
+}
+
+.add-habit-btn{
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #1677ff;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.add-habit-btn:hover{
+  background-color: #125ecc;
+}
+
+.habit-btns{
+  display: flex;
+  gap: 10px;
+}
+
+.habit-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #1677ff;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.habit-btn:hover {
+  background-color: #125ecc;
+}
+
+.delete-habit-btn{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: rgb(220, 43, 43);
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.delete-habit-btn:hover{
+  background-color: rgb(169, 4, 4);
+}
+
+.progress-bar{
+  margin-top: 8px;
+}

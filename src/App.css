@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1; 
+  padding: 20px;
+  overflow-y: auto; 
+  background-color: #f4f6f9; 
+}
+
+.main-container{
+  min-height: 550px;
+  max-height: 90vh;
+  overflow-y: auto; 
+}
