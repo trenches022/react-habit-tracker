@@ -4,8 +4,6 @@ A web application built with React.js that helps users track their daily habits 
 
 ![Fit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/habit-tracker-screenshot.png)
 ![Fit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/habit-tracker-screenshot1.png)
-![Fit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/habit-tracker-screenshot2.png)
-![Fit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/habit-tracker-screenshot3.png)
 ![Fit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/habit-tracker-screenshot4.png)
 ![Fit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/habit-tracker-screenshot5.png)
 
