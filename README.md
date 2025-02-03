@@ -52,8 +52,6 @@ A web application built with React.js that helps users track their daily habits 
 
 # Future Improvements:
 
-* Calendar View: A dedicated calendar page for tracking habits over time.
-
 * Progress Analytics: Charts and insights for better habit tracking.
 
 * Dark Mode: Theme toggle for better user experience.
