@@ -1,7 +1,13 @@
+import './Settings.css';
+
 const Settings = () => {
   return (
     <div className="settings-container">
-      Settings
+      <h1>Settings</h1>
+      <div className="setting-dark-mode">
+        <h3>Dark Mode</h3>
+        <button className="theme-switch-btn">Switch Theme</button>
+      </div>
     </div>
   )
 }

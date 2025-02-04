@@ -1,0 +1,29 @@
+.settings-container{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  border-radius: 12px;
+  padding: 20px 10px;
+}
+
+.setting-dark-mode{
+  background-color: #f4f6f9;
+  height: 15vh;
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+
+.theme-switch-btn{
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+}
+
+.theme-switch-btn:hover{
+  background-color: rgb(53, 53, 53);
+} 
