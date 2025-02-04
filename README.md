@@ -22,7 +22,6 @@ The app utilizes Recharts to visualize habit progress with dynamic line charts, 
 * Local Storage Persistence: Habit data is stored in localStorage, ensuring data persistence across sessions.
 * Global State Management: React Context API (useContext) is used to manage habit data efficiently.
 * Responsive UI: Designed with Ant Design for a clean and modern interface.
-* Upcoming Features: Calendar, Progress history, and customizable notifications are under development.
 
 # Technologies Used:
 
