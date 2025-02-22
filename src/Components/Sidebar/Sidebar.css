@@ -10,9 +10,6 @@
   overflow: hidden;
 }
 
-ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.css-dev-only-do-not-override-cdzvx5{
-  padding-top: 45px !important;
-}
 
 @media (max-width: 768px) {
   .sidebar {
@@ -22,6 +19,7 @@ ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.css-dev-only-do-not-ove
     z-index: 999;
     background-color: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
   }
 
   .sidebar.collapsed {

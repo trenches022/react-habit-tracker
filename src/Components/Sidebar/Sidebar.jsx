@@ -7,7 +7,7 @@ import './Sidebar.css';
 const Sidebar = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
