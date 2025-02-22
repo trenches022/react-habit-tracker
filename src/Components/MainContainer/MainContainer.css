@@ -1,7 +1,7 @@
 .main-container {
-  height: 700px;
-  width: 1000px;
-  margin: 50px auto;
+  width: 50%;
+  max-width: 1000px;
+  margin: 20px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 12px;
@@ -16,7 +16,7 @@
 }
 
 .main-container h1 {
-  font-size: 28px;
+  font-size: 24px;
   color: #333;
   font-weight: bold;
   margin-bottom: 20px;
@@ -30,30 +30,29 @@
 
 .habit-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; 
   background-color: #ffffff;
-  padding: 28px 25px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
-}
-
-.habit-item:hover {
-  transform: scale(1.01);
-  transition: all 0.5s;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .habit-info {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+  width: 100%;
 }
 
 .habit-info img {
-  width: 40px;
-  height: 40px;
+  width: 50px; 
+  height: 50px;
 }
 
 .habit-info h5 {
@@ -63,12 +62,12 @@
 }
 
 .habit-info p {
-  font-size: 14px;
+  font-size: 16px; 
   color: #1677ff;
   margin: 0;
 }
 
-.add-habit-btn{
+.add-habit-btn {
   margin-bottom: 20px;
   padding: 10px 15px;
   border: none;
@@ -80,45 +79,93 @@
   transition: background-color 0.3s;
 }
 
-.add-habit-btn:hover{
-  background-color: #125ecc;
-}
-
-.habit-btns{
+.habit-btns {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
+  width: 50%;
 }
 
-.habit-btn {
-  padding: 10px 15px;
+.habit-btn,
+.delete-habit-btn {
+  flex: 1;
+  padding: 10px;
   border: none;
   border-radius: 8px;
-  font-size: 15px;
-  background-color: #1677ff;
+  font-size: 14px;
   cursor: pointer;
   color: white;
   transition: background-color 0.3s;
+}
+
+.habit-btn {
+  background-color: #1677ff;
 }
 
 .habit-btn:hover {
   background-color: #125ecc;
 }
 
-.delete-habit-btn{
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
+.delete-habit-btn {
   background-color: rgb(220, 43, 43);
-  cursor: pointer;
-  color: white;
-  transition: background-color 0.3s;
 }
 
-.delete-habit-btn:hover{
+.delete-habit-btn:hover {
   background-color: rgb(169, 4, 4);
 }
 
-.progress-bar{
+.progress-bar {
+  width: 100%; 
   margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .habit-item {
+    padding: 15px;
+    align-items: flex-start; 
+    width: 85%;
+  }
+
+  .habit-info {
+    flex-direction: row; 
+    align-items: center;
+    gap: 15px;
+  }
+
+  .habit-info img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .habit-info h5 {
+    font-size: 14px;
+  }
+
+  .habit-info p {
+    font-size: 12px;
+  }
+
+  .add-habit-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .habit-btn,
+  .delete-habit-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .habit-btns {
+    width: 100%; 
+  }
+
+  .progress-bar {
+    width: 100%; 
+  }
 }

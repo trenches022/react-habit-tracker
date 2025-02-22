@@ -1,0 +1,43 @@
+.calendar-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.calendar-container h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ant-picker-calendar {
+  width: 100%;
+}
+
+.ant-modal {
+  max-width: 90%;
+}
+
+.ant-select {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-container h2 {
+    font-size: 20px;
+  }
+
+  .ant-picker-calendar {
+    font-size: 12px;
+  }
+
+  .ant-modal {
+    width: 90% !important;
+  }
+}

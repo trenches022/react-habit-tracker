@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { Calendar, Modal, Select, Badge } from "antd";
 import { HabitContext } from "../Contexts/HabitContext";
+import './CalendarPage.css';
 
 const CalendarPage = () => {
   const { habits } = useContext(HabitContext);

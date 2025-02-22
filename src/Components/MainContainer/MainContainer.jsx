@@ -75,7 +75,7 @@ const MainContainer = () => {
                     strokeLinecap="butt" 
                     percent={((habit.timeSpent / habit.totalTime) * 100).toFixed(0)}
                     strokeWidth={4} 
-                    size={[300, 5]} 
+                    size={[220, 5]} 
                   />
                 </div>
               </div>
