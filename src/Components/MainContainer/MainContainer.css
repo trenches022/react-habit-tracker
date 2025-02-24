@@ -3,21 +3,21 @@
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--card-background);
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow);
   text-align: center;
 }
 
 .main-container h2 {
   font-size: 18px;
-  color: #666;
+  color: var(--text-color);
   margin-bottom: 5px;
 }
 
 .main-container h1 {
   font-size: 24px;
-  color: #333;
+  color: var(--text-color);
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

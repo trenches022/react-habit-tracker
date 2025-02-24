@@ -1,8 +1,34 @@
-body{
+:root {
+  --background-color: white;
+  --text-color: black;
+  --card-background: #ffffff;
+  --card-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --icon-filter: invert(0%);
+}
+
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: white;
+  --card-background: #252525;
+  --card-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  --icon-filter: invert(100%);
+}
+
+img[src*=".svg"] {
+  filter: var(--icon-filter);
+}
+
+img[src*=".png"] {
+  filter: var(--icon-filter);
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .app-container {
@@ -11,14 +37,19 @@ body{
 }
 
 .main-content {
-  flex-grow: 1; 
+  flex-grow: 1;
   padding: 10px;
-  overflow-y: hidden; 
-  background-color: #f4f6f9; 
+  overflow-y: auto;
+  background-color: var(--background-color);
 }
 
-.main-container{
-  min-height: 550px;
-  max-height: 90vh;
-  overflow-y: auto; 
+.main-container {
+  width: 50%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
 }

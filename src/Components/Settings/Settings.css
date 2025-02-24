@@ -1,14 +1,15 @@
 .settings-container{
-  background-color: #fff;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   height: 90vh;
   border-radius: 12px;
   padding: 20px 10px;
+  color: var(--text-color);
 }
 
 .setting-dark-mode{
-  background-color: #f4f6f9;
+  background-color: var(--card-background);
   height: 15vh;
   padding-left: 20px;
   padding-top: 10px;
@@ -20,8 +21,8 @@
   padding: 12px 20px;
   cursor: pointer;
   border-radius: 8px;
-  color: white;
-  background-color: black;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .theme-switch-btn:hover{

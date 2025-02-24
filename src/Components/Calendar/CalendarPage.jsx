@@ -31,7 +31,7 @@ const CalendarPage = () => {
     setIsModalOpen(false);
   };
 
-  const dateCellRender = (value) => {
+  const cellRender = (value) => {
     const date = value.format("YYYY-MM-DD");
     const habitsForDate = completedHabits[date] || [];
 
@@ -47,7 +47,7 @@ const CalendarPage = () => {
   return (
     <div>
       <h2>Habits calendar</h2>
-      <Calendar onSelect={handleSelectDate} dateCellRender={dateCellRender} />
+      <Calendar onSelect={handleSelectDate} cellRender={cellRender} />
 
       <Modal
         title="Choose habit"
