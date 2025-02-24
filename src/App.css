@@ -38,7 +38,7 @@ body {
 
 .main-content {
   flex-grow: 1;
-  padding: 10px;
+  padding: 25px;
   overflow-y: auto;
   background-color: var(--background-color);
 }
