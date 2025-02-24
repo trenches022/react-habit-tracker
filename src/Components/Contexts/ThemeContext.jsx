@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 import { theme } from "antd";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
@@ -6,10 +6,18 @@ const { defaultAlgorithm, darkAlgorithm } = theme;
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [themeMode, setThemeMode] = useState("light"); 
+
+  const [themeMode, setThemeMode] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme || "light"; 
+  });
 
   const toggleTheme = () => {
-    setThemeMode((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setThemeMode((prevTheme) => {
+      const newTheme = prevTheme === "light" ? "dark" : "light";
+      localStorage.setItem("theme", newTheme); 
+      return newTheme;
+    });
   };
 
   const currentAlgorithm = themeMode === "dark" ? darkAlgorithm : defaultAlgorithm;
