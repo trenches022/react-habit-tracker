@@ -46,7 +46,7 @@ const CalendarPage = () => {
 
   return (
     <div>
-      <h2>Habits calendar</h2>
+      <h2 style={{color: 'var(--text-color)'}}>Habits calendar</h2>
       <Calendar onSelect={handleSelectDate} cellRender={cellRender} />
 
       <Modal

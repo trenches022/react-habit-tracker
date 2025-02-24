@@ -12,6 +12,7 @@ const Progress = () => {
 
   return (
     <div className="progress-container">
+      <h2 style={{color: 'var(--text-color)'}}>Track Your Progress</h2>
       <ResponsiveContainer width="100%" height={200}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
