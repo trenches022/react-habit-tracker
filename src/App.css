@@ -22,13 +22,14 @@ img[src*=".png"] {
   filter: var(--icon-filter);
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  padding-top: env(safe-area-inset-top);
 }
 
 .app-container {
