@@ -6,9 +6,18 @@
   border-radius: 12px;
   padding: 20px 10px;
   color: var(--text-color);
+  gap: 15px;
 }
 
 .setting-dark-mode{
+  background-color: var(--card-background);
+  height: 15vh;
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+
+.features{
   background-color: var(--card-background);
   height: 15vh;
   padding-left: 20px;

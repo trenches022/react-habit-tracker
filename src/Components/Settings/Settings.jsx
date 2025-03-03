@@ -13,6 +13,9 @@ const Settings = () => {
           Switch to {themeMode === "light" ? "Dark" : "Light"} Theme
         </button>
       </div>
+      <div className='features'>
+        <h3>New features in progress</h3>
+      </div>
     </div>
   );
 };
