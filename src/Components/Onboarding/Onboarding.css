@@ -1,0 +1,53 @@
+.onboarding-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(194, 194, 194, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.onboarding-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.onboarding-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.onboarding-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.onboarding-content ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.onboarding-content li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.onboarding-content li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1890ff;
+}
