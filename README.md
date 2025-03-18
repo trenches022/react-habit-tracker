@@ -4,6 +4,7 @@ A web application built with React.js that helps users track their daily habits 
 
 The app utilizes Recharts to visualize habit progress with dynamic line charts, allowing users to track their performance over time. React Context API (useContext) is used for global state management, ensuring seamless data flow across components.
 
+![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot14.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot.png)
 
 #  Key Features
