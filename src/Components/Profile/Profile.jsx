@@ -16,7 +16,7 @@ const Profile = () => {
       <h1>User Profile</h1>
       <div className="character">
         <img
-          src={`/assets/skins/${skin}.jpg`}
+          src={`/skins/${skin}.jpg`}
           alt="Character"
           style={{ width: "150px", height: "150px" }}
         />
