@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { CalendarOutlined, FormOutlined, SettingOutlined, AreaChartOutlined, MenuOutlined } from '@ant-design/icons';
+import { useState, useEffect } from 'react';
+import { CalendarOutlined, FormOutlined, SettingOutlined, AreaChartOutlined, MenuOutlined, UserOutlined } from '@ant-design/icons';
 import { Menu, Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import './Sidebar.css';
@@ -45,6 +45,12 @@ const Sidebar = () => {
       label: 'Progress',
       icon: <AreaChartOutlined style={{ fontSize: '18px' }} />,
       onClick: () => handleMenuClick('/progress'), 
+    },
+    {
+      key: '/profile',
+      label: 'Profile',
+      icon: <UserOutlined style={{ fontSize: '18px' }} />,
+      onClick: () => handleMenuClick('/profile'), 
     },
     {
       key: '/settings',

@@ -6,6 +6,7 @@ import Sidebar from "../Components/Sidebar/Sidebar";
 import Progress from "../Components/Progress/Progress";
 import Settings from "../Components/Settings/Settings";
 import CalendarPage from "../Components/Calendar/CalendarPage";
+import Profile from "./Profile/Profile";
 import Onboarding from "../Components/Onboarding/Onboarding";
 import useOnboarding from "../hooks/useOnboarding";
 
@@ -34,6 +35,7 @@ const AppWrapper = () => {
                   <Route path="/calendar" element={<CalendarPage />} />
                   <Route path="/progress" element={<Progress />} />
                   <Route path="/settings" element={<Settings />} />
+                  <Route path="/profile" element={<Profile />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
               </div>

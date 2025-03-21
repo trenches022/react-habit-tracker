@@ -1,0 +1,23 @@
+.profile-container {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.character {
+  margin-bottom: 2rem;
+}
+
+.currency {
+  margin-bottom: 2rem;
+}
+
+.skills,
+.skins {
+  margin-bottom: 2rem;
+}
+
+.skills button,
+.skins button {
+  margin-left: 1rem;
+}

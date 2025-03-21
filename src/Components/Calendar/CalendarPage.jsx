@@ -1,20 +1,13 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { Calendar, Modal, Select, Badge } from "antd";
 import { HabitContext } from "../Contexts/HabitContext";
-import './CalendarPage.css';
+import "./CalendarPage.css";
 
 const CalendarPage = () => {
-  const { habits } = useContext(HabitContext);
+  const { habits, completedHabits, markHabitCompleted } = useContext(HabitContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedHabit, setSelectedHabit] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
-  const [completedHabits, setCompletedHabits] = useState(() => {
-    return JSON.parse(localStorage.getItem("completedHabits")) || {};
-  });
-
-  useEffect(() => {
-    localStorage.setItem("completedHabits", JSON.stringify(completedHabits));
-  }, [completedHabits]);
 
   const handleSelectDate = (value) => {
     setSelectedDate(value.format("YYYY-MM-DD"));
@@ -23,10 +16,7 @@ const CalendarPage = () => {
 
   const handleCompleteHabit = () => {
     if (selectedHabit) {
-      setCompletedHabits((prev) => ({
-        ...prev,
-        [selectedDate]: [...(prev[selectedDate] || []), selectedHabit],
-      }));
+      markHabitCompleted(selectedDate, selectedHabit);
     }
     setIsModalOpen(false);
   };
@@ -46,7 +36,7 @@ const CalendarPage = () => {
 
   return (
     <div>
-      <h2 style={{color: 'var(--text-color)'}}>Habits calendar</h2>
+      <h2 style={{ color: "var(--text-color)" }}>Habits calendar</h2>
       <Calendar onSelect={handleSelectDate} cellRender={cellRender} />
 
       <Modal
