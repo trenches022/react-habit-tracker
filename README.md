@@ -35,6 +35,8 @@ The app utilizes Recharts to visualize habit progress with dynamic line charts, 
 
 <a href="https://react.dev/reference/react/useContext" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="23" height="23" alt="useContext" /></a> React Context API (useContext) - State management
 
+<a href="https://www.npmjs.com/package/react-vertical-timeline-component" target="_blank"><img src="https://pbs.twimg.com/profile_images/1285630920263966721/Uk6O1QGC_400x400.jpg" width="23" height="23" alt="NPM" /></a> React Vertical Timeline - Roadmap
+
 # How It Works:
 
 * Users add habits by specifying a name and target duration.
