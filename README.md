@@ -5,7 +5,7 @@ A web application built with React.js that helps users track their daily habits 
 The app utilizes Recharts to visualize habit progress with dynamic line charts, allowing users to track their performance over time. React Context API (useContext) is used for global state management, ensuring seamless data flow across components.
 
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot14.png)
-![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot.png)
+![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot20.png)
 
 #  Key Features
 
@@ -48,7 +48,7 @@ The app utilizes Recharts to visualize habit progress with dynamic line charts, 
 
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot1.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot4.png)
-![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot5.png)
+![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot21.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot6.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot7.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot8.png)
@@ -58,7 +58,8 @@ The app utilizes Recharts to visualize habit progress with dynamic line charts, 
 
 # Dark Mode :
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot15.png)
-![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot10.png)
+![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot18.png)
+![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot19.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot11.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot12.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot13.png)
