@@ -126,7 +126,7 @@
   border: 1px solid #1677ff;
   border-radius: 8px;
   font-size: 15px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: black;
   cursor: pointer;
   color: white;
   transition: all 0.3s ease;
