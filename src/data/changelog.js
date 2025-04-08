@@ -3,6 +3,7 @@ export const changelog = [
     version: "1.2.0",
     date: "April 2025",
     changes: [
+      "Implemented input validation for habits",
       "Added Focus Mode to filter high-priority habits.",
       "Enhanced the overall design and UX of the application.",
     ],
