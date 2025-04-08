@@ -26,20 +26,26 @@ const MainContainer = () => {
   };
 
   const addNewHabit = () => {
-    if (newHabit.title.trim() && newHabit.totalTime) {
-      setHabits([
-        ...habits,
-        {
-          ...newHabit,
-          timeSpent: 0,
-          priority: newHabit.priority || "Low",
-          icon: "https://www.svgrepo.com/show/476047/checklist.svg",
-        },
-      ]);
-      setNewHabit({ title: "", totalTime: "", priority: "Low" });
-      setIsAddHabitModalOpen(false);
-    }
-  };
+  if (!newHabit.title.trim()) {
+    message.error("Habit name cannot be empty");
+    return;
+  }
+  if (!newHabit.totalTime || newHabit.totalTime <= 0) {
+    message.error("Minutes per day must be greater than 0");
+    return;
+  }
+  setHabits([
+    ...habits,
+    {
+      ...newHabit,
+      timeSpent: 0,
+      priority: newHabit.priority || "Low",
+      icon: "https://www.svgrepo.com/show/476047/checklist.svg",
+    },
+  ]);
+  setNewHabit({ title: "", totalTime: "", priority: "Low", icon: "" });
+  setIsAddHabitModalOpen(false);
+};
 
   const handleHabitPriorityChange = (title, value) => {
     const updatedHabits = habits.map((habit) =>
@@ -61,9 +67,13 @@ const MainContainer = () => {
   };
 
   const handleOk = () => {
-    if (selectedHabit && inputValue.trim() !== "") {
+    if (selectedHabit && inputValue.trim() !== "" && inputValue > 0) {
       updateHabitTime(selectedHabit.title, Number(inputValue));
     }
+    if (inputValue <= 0) {
+    message.error("Minutes per day must be greater than 0");
+    return;
+  }
     setIsModalOpen(false);
   };
 
