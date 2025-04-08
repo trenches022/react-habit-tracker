@@ -54,7 +54,7 @@ The app utilizes Recharts to visualize habit progress with dynamic line charts, 
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot8.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot9.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot16.png)
-![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot17.png)
+![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot22.png)
 
 # Dark Mode :
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot15.png)
@@ -62,4 +62,4 @@ The app utilizes Recharts to visualize habit progress with dynamic line charts, 
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot19.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot11.png)
 ![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot12.png)
-![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot13.png)
+![Habit App Screenshot](https://raw.githubusercontent.com/trenches022/react-habit-tracker/main/assets/habit-tracker-screenshot23.png)
