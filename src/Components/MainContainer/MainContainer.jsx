@@ -1,6 +1,6 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./MainContainer.css";
-import { Progress, Modal, Input, Select, message } from "antd";
+import { Progress, Modal, Input, Select, message, Tooltip } from "antd";
 import { useState, useEffect, useContext } from "react";
 import { HabitContext } from "../Contexts/HabitContext";
 
@@ -95,12 +95,14 @@ const MainContainer = () => {
       <button className="add-habit-btn" onClick={() => setIsAddHabitModalOpen(true)}>
         Add Habit <i className="fa-regular fa-square-plus" style={{ color: "white" }}></i>
       </button>
-      <button
-        className={`focus-mode-btn ${isFocusMode ? "active" : ""}`}
-        onClick={handleFocus}
-      >
-        Focus Mode <i className="fa-solid fa-arrows-to-circle"></i>
-      </button>
+      <Tooltip title="Show only high-priority habits to focus on what's most important">
+        <button
+          className={`focus-mode-btn ${isFocusMode ? "active" : ""}`}
+          onClick={handleFocus}
+        >
+          Focus Mode <i className="fa-solid fa-arrows-to-circle"></i>
+        </button>
+      </Tooltip>
 
       <div className="habits-list">
         {filteredHabits.map((habit, index) => (

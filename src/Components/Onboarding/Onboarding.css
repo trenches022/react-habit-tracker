@@ -41,6 +41,12 @@
   border: none !important;
 }
 
+.vertical-timeline-element--work:hover{
+  cursor: pointer;
+  transform: scale(1.015);
+  transition: all 0.4s ease;
+}
+
 .vertical-timeline-element--work h3 {
   font-size: 1.1rem;
   margin: 0;
