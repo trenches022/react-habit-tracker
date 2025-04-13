@@ -81,6 +81,7 @@ const MainContainer = () => {
     const filteredHabits = habits.filter((habit) => habit.title !== title);
     setHabits(filteredHabits);
     localStorage.setItem("habits", JSON.stringify(filteredHabits));
+    message.success('Habit deleted!')
   };
 
   const handleFocus = () => {
