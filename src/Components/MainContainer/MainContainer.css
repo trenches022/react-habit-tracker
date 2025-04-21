@@ -78,11 +78,49 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
   margin: 0 auto;
   width: 70%;
   border: 1px solid rgba(22, 119, 255, 0.341);
+  position: relative;
+}
+
+.habit-item.is-dragging {
+  box-shadow: 0 5px 15px rgba(22, 119, 255, 0.5);
+  z-index: 10;
+}
+
+.habit-item.overlay {
+  cursor: grabbing;
+  box-shadow: 0 5px 15px rgba(22, 119, 255, 0.7);
+  opacity: 0.8;
+}
+
+.drag-handle {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  width: 30px;
+  height: 20px;
+}
+
+.drag-handle:hover {
+  opacity: 1;
+  background-color: rgba(22, 119, 255, 0.1);
+}
+
+.drag-handle:active {
+  cursor: grabbing;
 }
 
 .habit-info {
@@ -91,6 +129,7 @@
   align-items: center;
   gap: 10px;
   width: 100%;
+  margin-top: 15px;
 }
 
 .habit-info img {
@@ -226,14 +265,11 @@
 
   .habit-item {
     padding: 15px;
-    align-items: flex-start;
     width: 85%;
   }
 
   .habit-info {
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
+    margin-top: 20px;
   }
 
   .habit-info img {
