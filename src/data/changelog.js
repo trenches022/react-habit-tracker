@@ -6,6 +6,9 @@ export const changelog = [
       "Implemented input validation for habits.",
       "Added Focus Mode to filter high-priority habits.",
       "Enhanced the overall design and UX of the application.",
+      "Added drag-and-drop functionality for habits to improve UX.",
+      "Refactored MainContainer.jsx into smaller components and hooks.",
+      "Fixed rendering of empty state for high-priority habits in Focus Mode.",
     ],
   },
   {
