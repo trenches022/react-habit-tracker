@@ -221,6 +221,7 @@
 .focus-mode-btn.active {
   background-color: #1677ff;
   border-color: #125ecc;
+  color: white;
 }
 
 .priority-select {

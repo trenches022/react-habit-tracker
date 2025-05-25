@@ -128,7 +128,7 @@ const MainContainer = () => {
             strategy={verticalListSortingStrategy}
           >
             {filteredHabits.length <= 0 ? (
-              <h2>You don't have high-priority habits yet.</h2>
+              <h2>You don&apos;t have high-priority habits yet.</h2>
             ) : (
               filteredHabits.map((habit) => (
                 <SortableHabitItem
